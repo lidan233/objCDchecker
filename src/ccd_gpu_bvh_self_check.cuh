@@ -1,0 +1,11 @@
+//
+// Created by lidan on 12/11/2020.
+//
+
+#ifndef OBJVIEWER_CCD_GPU_BVH_SELF_CHECK_CUH
+#define OBJVIEWER_CCD_GPU_BVH_SELF_CHECK_CUH
+
+
+
+
+#endif //OBJVIEWER_CCD_GPU_BVH_SELF_CHECK_CUH

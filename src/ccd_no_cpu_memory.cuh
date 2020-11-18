@@ -1,0 +1,11 @@
+//
+// Created by lidan on 12/11/2020.
+//
+
+#ifndef OBJVIEWER_CCD_NO_CPU_MEMORY_CUH
+#define OBJVIEWER_CCD_NO_CPU_MEMORY_CUH
+
+
+
+
+#endif //OBJVIEWER_CCD_NO_CPU_MEMORY_CUH
