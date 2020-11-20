@@ -303,8 +303,8 @@ void key3()
 	printf("Checking Self-CCD between cloths ...\n");
 
 	// 0 i
-    gpu_checkSelfCD(2,false) ;
-	checkSelfCD(false);
+    gpu_checkSelfCD(0,false) ;
+//	checkSelfCD(false);
 
 
 }
