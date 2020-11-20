@@ -60,6 +60,30 @@ CMAKE_BINARY_DIR = C:\Users\lidan\Desktop\last\cmake-build-debug
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target install/local
+install\local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	echo >nul && "D:\software\clion\CLion 2020.2.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install\local
+
+# Special rule for the target install/local
+install\local\fast: preinstall\fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	echo >nul && "D:\software\clion\CLion 2020.2.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install\local\fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	echo >nul && "D:\software\clion\CLion 2020.2.3\bin\cmake\win\bin\cmake.exe" -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install\fast: preinstall\fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	echo >nul && "D:\software\clion\CLion 2020.2.3\bin\cmake\win\bin\cmake.exe" -P cmake_install.cmake
+.PHONY : install\fast
+
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -81,6 +105,16 @@ rebuild_cache:
 rebuild_cache\fast: rebuild_cache
 
 .PHONY : rebuild_cache\fast
+
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components\fast: list_install_components
+
+.PHONY : list_install_components\fast
 
 # The main all target
 all: cmake_check_build_system
@@ -126,6 +160,45 @@ objViewer: cmake_check_build_system
 objViewer\fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\objViewer.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\objViewer.dir\build
 .PHONY : objViewer\fast
+
+#=============================================================================
+# Target rules for targets named example
+
+# Build rule for target.
+example: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) example
+.PHONY : example
+
+# fast build rule for target.
+example\fast:
+	$(MAKE) $(MAKESILENT) -f external\cxxopts\src\CMakeFiles\example.dir\build.make /nologo -$(MAKEFLAGS) external\cxxopts\src\CMakeFiles\example.dir\build
+.PHONY : example\fast
+
+#=============================================================================
+# Target rules for targets named options_test
+
+# Build rule for target.
+options_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) options_test
+.PHONY : options_test
+
+# fast build rule for target.
+options_test\fast:
+	$(MAKE) $(MAKESILENT) -f external\cxxopts\test\CMakeFiles\options_test.dir\build.make /nologo -$(MAKEFLAGS) external\cxxopts\test\CMakeFiles\options_test.dir\build
+.PHONY : options_test\fast
+
+#=============================================================================
+# Target rules for targets named link_test
+
+# Build rule for target.
+link_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) link_test
+.PHONY : link_test
+
+# fast build rule for target.
+link_test\fast:
+	$(MAKE) $(MAKESILENT) -f external\cxxopts\test\CMakeFiles\link_test.dir\build.make /nologo -$(MAKEFLAGS) external\cxxopts\test\CMakeFiles\link_test.dir\build
+.PHONY : link_test\fast
 
 BVH\util.obj: BVH\util.cu.obj
 
@@ -208,32 +281,32 @@ src\ccd_cpu_bvh_cd.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\objViewer.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\objViewer.dir\src\ccd_cpu_bvh_cd.cpp.s
 .PHONY : src\ccd_cpu_bvh_cd.cpp.s
 
-src\ccd_gpu_bvh_self_check.obj: src\ccd_gpu_bvh_self_check.cu.obj
+src\ccd_gpu_bvh_check.obj: src\ccd_gpu_bvh_check.cu.obj
 
-.PHONY : src\ccd_gpu_bvh_self_check.obj
+.PHONY : src\ccd_gpu_bvh_check.obj
 
 # target to build an object file
-src\ccd_gpu_bvh_self_check.cu.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\objViewer.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_self_check.cu.obj
-.PHONY : src\ccd_gpu_bvh_self_check.cu.obj
+src\ccd_gpu_bvh_check.cu.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\objViewer.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_check.cu.obj
+.PHONY : src\ccd_gpu_bvh_check.cu.obj
 
-src\ccd_gpu_bvh_self_check.i: src\ccd_gpu_bvh_self_check.cu.i
+src\ccd_gpu_bvh_check.i: src\ccd_gpu_bvh_check.cu.i
 
-.PHONY : src\ccd_gpu_bvh_self_check.i
+.PHONY : src\ccd_gpu_bvh_check.i
 
 # target to preprocess a source file
-src\ccd_gpu_bvh_self_check.cu.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\objViewer.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_self_check.cu.i
-.PHONY : src\ccd_gpu_bvh_self_check.cu.i
+src\ccd_gpu_bvh_check.cu.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\objViewer.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_check.cu.i
+.PHONY : src\ccd_gpu_bvh_check.cu.i
 
-src\ccd_gpu_bvh_self_check.s: src\ccd_gpu_bvh_self_check.cu.s
+src\ccd_gpu_bvh_check.s: src\ccd_gpu_bvh_check.cu.s
 
-.PHONY : src\ccd_gpu_bvh_self_check.s
+.PHONY : src\ccd_gpu_bvh_check.s
 
 # target to generate assembly for a file
-src\ccd_gpu_bvh_self_check.cu.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\objViewer.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_self_check.cu.s
-.PHONY : src\ccd_gpu_bvh_self_check.cu.s
+src\ccd_gpu_bvh_check.cu.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\objViewer.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_check.cu.s
+.PHONY : src\ccd_gpu_bvh_check.cu.s
 
 src\ccd_no_cpu_memory.obj: src\ccd_no_cpu_memory.cu.obj
 
@@ -458,8 +531,14 @@ help:
 	@echo ... clean
 	@echo ... depend
 	@echo ... edit_cache
+	@echo ... install
+	@echo ... install/local
+	@echo ... list_install_components
 	@echo ... rebuild_cache
+	@echo ... example
+	@echo ... link_test
 	@echo ... objViewer
+	@echo ... options_test
 	@echo ... BVH/util.obj
 	@echo ... BVH/util.i
 	@echo ... BVH/util.s
@@ -469,9 +548,9 @@ help:
 	@echo ... src/ccd_cpu_bvh_cd.obj
 	@echo ... src/ccd_cpu_bvh_cd.i
 	@echo ... src/ccd_cpu_bvh_cd.s
-	@echo ... src/ccd_gpu_bvh_self_check.obj
-	@echo ... src/ccd_gpu_bvh_self_check.i
-	@echo ... src/ccd_gpu_bvh_self_check.s
+	@echo ... src/ccd_gpu_bvh_check.obj
+	@echo ... src/ccd_gpu_bvh_check.i
+	@echo ... src/ccd_gpu_bvh_check.s
 	@echo ... src/ccd_no_cpu_memory.obj
 	@echo ... src/ccd_no_cpu_memory.i
 	@echo ... src/ccd_no_cpu_memory.s

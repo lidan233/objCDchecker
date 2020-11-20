@@ -49,6 +49,8 @@ using namespace std;
 	printf("%s: %2.5f seconds\n", (message), tmp_timing_duration);}}
 
 
+
+
 //#define POVRAY_EXPORT
 #define OBJ_DIR "e:\\temp\\output-objs\\"
 
@@ -64,7 +66,7 @@ set<int> lion_set;
 set<int> dummy_set;
 
 BOX g_box;
-static int sidx=0;
+static int sidx=108;
 
 extern void clearFronts();
 double ww, hh, dd;
@@ -836,8 +838,82 @@ bool checkSelfIJ(int i, int j, mesh *cloth, bool ccd)
 			return false;
 	}
 }
+ void gpu_checkCD(int flag,bool ccd)
+ {
+     cloth_set.clear();
+     lion_set.clear();
 
-void gpu_checkSelfCD(bool ccd)
+     TIMING_BEGIN
+         if (ccd)
+             printf("start ccd checking ...\n");
+         else
+             printf("start cd checking ...\n");
+
+
+         for (int idx=0; idx<16; idx++) {
+             mesh *lion = lions[idx];
+             if (lion == NULL) continue;
+             gpu_mesh *mesh2 = new gpu_mesh(lion);
+             for (int k = 0; k < 16; k++) {
+                 mesh *cloth = cloths[k];
+                 if (cloth == NULL) continue;
+                 gpu_mesh *mesh1 = new gpu_mesh(cloth);
+
+//#define _MORE_CPU_MEMORY_
+//#define _MORE_GPU_MEMORY_
+//#define _Using_BVH_GPU_
+//#define _Using_BVH_CPU_
+
+//#ifdef _MORE_GPU_MEMORY_
+                 if (flag == 0) {
+                     checkCDGPU_no_cpu_memory(cloth_set, lion_set, mesh1, mesh2);
+                     set_to_file<int>(lion_set,
+                                      "C:\\Users\\lidan\\Desktop\\last\\set_result\\gpu_with_more_gpu_memory_cd_lion.txt");
+                     set_to_file<int>(cloth_set,
+                                      "C:\\Users\\lidan\\Desktop\\last\\set_result\\gpu_with_more_gpu_memory_cd_cloth.txt");
+                 }
+//#endif
+
+//#ifdef _MORE_CPU_MEMORY_
+                 if (flag == 1) {
+                     std::cout << "using trifs vertexs with bvh" << std::endl;
+                     std::cout << "using trifs vertexs with self bvh" << std::endl;
+                     checkCDGPU(cloth_set, lion_set, mesh1, mesh2);
+                     set_to_file<int>(cloth_set,
+                                      "C:\\Users\\lidan\\Desktop\\last\\set_result\\gpu_with_more_cpu_memory_cd_cloth.txt");
+                     set_to_file<int>(lion_set,
+                                      "C:\\Users\\lidan\\Desktop\\last\\set_result\\gpu_with_more_cpu_memory_cd_lion.txt");
+                 }
+//#endif
+
+//#ifdef _Using_BVH_CPU_
+                 if (flag == 2) {
+                     ccd_cpu_bvh_cd *cd = new ccd_cpu_bvh_cd();
+                     set<int> *collusion = cd->checkCDByBVH(mesh1, mesh2);
+                     for (auto begin = collusion->begin(); begin != collusion->end(); begin++) {
+                         cloth_set.insert((*begin));
+                     }
+                     set_to_file<int>(*collusion, "C:\\Users\\lidan\\Desktop\\last\\set_result\\cpu_bvh.txt");
+                 }
+//#endif
+
+//#ifdef _Using_BVH_GPU_
+                 if (flag == 3) {
+                     checkCDGPU_bvh(cloth_set, lion_set, mesh1, mesh2);
+                     set_to_file<int>(cloth_set, "C:\\Users\\lidan\\Desktop\\last\\set_result\\gpu_bvh_cd_cloth.txt");
+                     set_to_file<int>(lion_set, "C:\\Users\\lidan\\Desktop\\last\\set_result\\gpu_bvh_cd_lion.txt");
+                 }
+//#endif
+
+
+             }
+         }
+     TIMING_END("end gpu checking")
+ }
+
+
+
+void gpu_checkSelfCD(int flag,bool ccd)
 {
 
     cloth_set.clear();
@@ -855,32 +931,47 @@ void gpu_checkSelfCD(bool ccd)
             gpu_mesh *mesh1 = new gpu_mesh(cloth);
 //#define _MORE_CPU_MEMORY_
 //#define _MORE_GPU_MEMORY_
-#define _Using_BVH_GPU_
+//#define _Using_BVH_GPU_
 //#define _Using_BVH_CPU_
 
+//#ifdef _MORE_GPU_MEMORY_
+            if(flag==0)
+            {
+                checkSelfCDGPU_no_cpu_memory(cloth_set, mesh1);
+                set_to_file<int>(cloth_set,"C:\\Users\\lidan\\Desktop\\last\\set_result\\gpu_with_more_gpu_memory.txt") ;
+            }
+//#endif
 
-#ifdef _MORE_GPU_MEMORY_
-            checkSelfCDGPU_no_cpu_memory(mesh1);
-#endif
+//#ifdef _MORE_CPU_MEMORY_
+            if(flag==1)
+            {
+                std::cout<<"using trifs vertexs with bvh"<<std::endl ;
+                std::cout<<"using trifs vertexs with self bvh"<<std::endl ;
+                checkSelfCDGPU(cloth_set,mesh1);
+                set_to_file<int>(cloth_set,"C:\\Users\\lidan\\Desktop\\last\\set_result\\gpu_with_more_cpu_memory.txt") ;
+            }
+//#endif
 
-#ifdef _MORE_CPU_MEMORY_
-            std::cout<<"using trifs vertexs with bvh"<<std::endl ;
-            std::cout<<"using trifs vertexs with self bvh"<<std::endl ;
-            checkSelfCDGPU(mesh1);
-//            checkSelfCDGPU_bvh(mesh1) ;
-#endif
+//#ifdef _Using_BVH_CPU_
+            if(flag==2)
+            {
+                ccd_cpu_bvh_cd* cd = new ccd_cpu_bvh_cd() ;
+                set<int>* collusion = cd->checkSelfCDByBVH(mesh1) ;
+                for(auto begin = collusion->begin();begin!=collusion->end();begin++)
+                {
+                    cloth_set.insert((*begin)) ;
+                }
+                set_to_file<int>(cloth_set,"C:\\Users\\lidan\\Desktop\\last\\set_result\\cpu_bvh.txt") ;
+            }
+//#endif
 
-#ifdef _Using_BVH_CPU_
-            ccd_cpu_bvh_cd* cd = new ccd_cpu_bvh_cd() ;
-            set<int>* collusion = cd->checkSelfCDByBVH(mesh1) ;
-//            set_to_file<int>(*collusion,"C:\\Users\\lidan\\Desktop\\last\\set_result\\cpu_bvh.txt") ;
-#endif
-
-#ifdef _Using_BVH_GPU_
-            checkSelfCDGPU_bvh(mesh1) ;
-#endif
-
-
+//#ifdef _Using_BVH_GPU_
+            if(flag==3)
+            {
+                checkSelfCDGPU_bvh(cloth_set,mesh1) ;
+                set_to_file<int>(cloth_set,"C:\\Users\\lidan\\Desktop\\last\\set_result\\gpu_bvh.txt") ;
+            }
+//#endif
 
 
         }

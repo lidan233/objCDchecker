@@ -2,7 +2,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/objViewer.dir/BVH/util.cu.obj"
   "CMakeFiles/objViewer.dir/src/ccd.cpp.obj"
   "CMakeFiles/objViewer.dir/src/ccd_cpu_bvh_cd.cpp.obj"
-  "CMakeFiles/objViewer.dir/src/ccd_gpu_bvh_self_check.cu.obj"
+  "CMakeFiles/objViewer.dir/src/ccd_gpu_bvh_check.cu.obj"
   "CMakeFiles/objViewer.dir/src/ccd_no_cpu_memory.cu.obj"
   "CMakeFiles/objViewer.dir/src/ccd_oneblockoneface.cu.obj"
   "CMakeFiles/objViewer.dir/src/cmesh.cpp.obj"

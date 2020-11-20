@@ -6,7 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CUDA
   "C:/Users/lidan/Desktop/last/BVH/util.cu" "C:/Users/lidan/Desktop/last/cmake-build-debug/CMakeFiles/objViewer.dir/BVH/util.cu.obj"
-  "C:/Users/lidan/Desktop/last/src/ccd_gpu_bvh_self_check.cu" "C:/Users/lidan/Desktop/last/cmake-build-debug/CMakeFiles/objViewer.dir/src/ccd_gpu_bvh_self_check.cu.obj"
+  "C:/Users/lidan/Desktop/last/src/ccd_gpu_bvh_check.cu" "C:/Users/lidan/Desktop/last/cmake-build-debug/CMakeFiles/objViewer.dir/src/ccd_gpu_bvh_check.cu.obj"
   "C:/Users/lidan/Desktop/last/src/ccd_no_cpu_memory.cu" "C:/Users/lidan/Desktop/last/cmake-build-debug/CMakeFiles/objViewer.dir/src/ccd_no_cpu_memory.cu.obj"
   "C:/Users/lidan/Desktop/last/src/ccd_oneblockoneface.cu" "C:/Users/lidan/Desktop/last/cmake-build-debug/CMakeFiles/objViewer.dir/src/ccd_oneblockoneface.cu.obj"
   "C:/Users/lidan/Desktop/last/src/cu_ccd.cu" "C:/Users/lidan/Desktop/last/cmake-build-debug/CMakeFiles/objViewer.dir/src/cu_ccd.cu.obj"
@@ -20,6 +20,7 @@ set(CMAKE_CUDA_TARGET_INCLUDE_PATH
   "../cudalib"
   "../src"
   "../BVH"
+  "../external/cxxopts/include"
   )
 set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/lidan/Desktop/last/src/ccd.cpp" "C:/Users/lidan/Desktop/last/cmake-build-debug/CMakeFiles/objViewer.dir/src/ccd.cpp.obj"
@@ -39,6 +40,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../cudalib"
   "../src"
   "../BVH"
+  "../external/cxxopts/include"
   )
 
 # Targets to which this target links.

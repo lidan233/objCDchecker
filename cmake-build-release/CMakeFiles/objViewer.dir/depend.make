@@ -67,74 +67,74 @@ CMakeFiles\objViewer.dir\BVH\util.cu.obj: "C:\Program Files\NVIDIA GPU Computing
 CMakeFiles\objViewer.dir\BVH\util.cu.obj: ..\BVH\util.cu
 CMakeFiles\objViewer.dir\BVH\util.cu.obj: ..\BVH\util.cuh
 
-CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_self_check.cu.obj: ..\BVH\util.cuh
-CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_self_check.cu.obj: ..\cudalib\helper_cuda.h
-CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_self_check.cu.obj: ..\cudalib\helper_string.h
-CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_self_check.cu.obj: ..\inc\aabb.h
-CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_self_check.cu.obj: ..\inc\box.h
-CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_self_check.cu.obj: ..\inc\edge.h
-CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_self_check.cu.obj: ..\inc\forceline.h
-CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_self_check.cu.obj: ..\inc\mat3f.h
-CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_self_check.cu.obj: ..\inc\tri.h
-CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_self_check.cu.obj: ..\inc\vec3f.h
-CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_self_check.cu.obj: ..\inc\vec3fcu.cuh
-CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_self_check.cu.obj: ..\src\cmesh.h
-CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_self_check.cu.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\builtin_types.h"
-CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_self_check.cu.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\channel_descriptor.h"
-CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_self_check.cu.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\crt\common_functions.h"
-CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_self_check.cu.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\crt\device_double_functions.h"
-CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_self_check.cu.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\crt\device_double_functions.hpp"
-CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_self_check.cu.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\crt\device_functions.h"
-CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_self_check.cu.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\crt\device_functions.hpp"
-CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_self_check.cu.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\crt\func_macro.h"
-CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_self_check.cu.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\crt\host_config.h"
-CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_self_check.cu.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\crt\host_defines.h"
-CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_self_check.cu.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\crt\math_functions.h"
-CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_self_check.cu.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\crt\math_functions.hpp"
-CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_self_check.cu.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\crt\sm_70_rt.h"
-CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_self_check.cu.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\crt\sm_70_rt.hpp"
-CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_self_check.cu.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\cuda_device_runtime_api.h"
-CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_self_check.cu.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\cuda_runtime.h"
-CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_self_check.cu.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\cuda_runtime_api.h"
-CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_self_check.cu.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\cuda_surface_types.h"
-CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_self_check.cu.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\cuda_texture_types.h"
-CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_self_check.cu.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\device_atomic_functions.h"
-CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_self_check.cu.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\device_atomic_functions.hpp"
-CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_self_check.cu.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\device_launch_parameters.h"
-CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_self_check.cu.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\device_types.h"
-CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_self_check.cu.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\driver_functions.h"
-CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_self_check.cu.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\driver_types.h"
-CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_self_check.cu.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\library_types.h"
-CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_self_check.cu.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\math_constants.h"
-CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_self_check.cu.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\sm_20_atomic_functions.h"
-CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_self_check.cu.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\sm_20_atomic_functions.hpp"
-CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_self_check.cu.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\sm_20_intrinsics.h"
-CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_self_check.cu.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\sm_20_intrinsics.hpp"
-CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_self_check.cu.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\sm_30_intrinsics.h"
-CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_self_check.cu.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\sm_30_intrinsics.hpp"
-CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_self_check.cu.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\sm_32_atomic_functions.h"
-CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_self_check.cu.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\sm_32_atomic_functions.hpp"
-CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_self_check.cu.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\sm_32_intrinsics.h"
-CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_self_check.cu.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\sm_32_intrinsics.hpp"
-CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_self_check.cu.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\sm_35_atomic_functions.h"
-CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_self_check.cu.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\sm_35_intrinsics.h"
-CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_self_check.cu.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\sm_60_atomic_functions.h"
-CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_self_check.cu.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\sm_60_atomic_functions.hpp"
-CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_self_check.cu.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\sm_61_intrinsics.h"
-CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_self_check.cu.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\sm_61_intrinsics.hpp"
-CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_self_check.cu.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\surface_functions.h"
-CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_self_check.cu.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\surface_indirect_functions.h"
-CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_self_check.cu.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\surface_types.h"
-CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_self_check.cu.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\texture_fetch_functions.h"
-CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_self_check.cu.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\texture_indirect_functions.h"
-CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_self_check.cu.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\texture_types.h"
-CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_self_check.cu.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\vector_functions.h"
-CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_self_check.cu.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\vector_functions.hpp"
-CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_self_check.cu.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\vector_types.h"
-CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_self_check.cu.obj: ..\src\ccd_gpu_bvh_self_check.cu
-CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_self_check.cu.obj: ..\src\ccd_gpu_bvh_self_check.cuh
-CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_self_check.cu.obj: ..\src\ccd_oneblockoneface.cuh
-CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_self_check.cu.obj: ..\src\gpu_mesh.h
+CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_check.cu.obj: ..\BVH\util.cuh
+CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_check.cu.obj: ..\cudalib\helper_cuda.h
+CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_check.cu.obj: ..\cudalib\helper_string.h
+CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_check.cu.obj: ..\inc\aabb.h
+CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_check.cu.obj: ..\inc\box.h
+CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_check.cu.obj: ..\inc\edge.h
+CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_check.cu.obj: ..\inc\forceline.h
+CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_check.cu.obj: ..\inc\mat3f.h
+CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_check.cu.obj: ..\inc\tri.h
+CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_check.cu.obj: ..\inc\vec3f.h
+CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_check.cu.obj: ..\inc\vec3fcu.cuh
+CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_check.cu.obj: ..\src\cmesh.h
+CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_check.cu.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\builtin_types.h"
+CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_check.cu.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\channel_descriptor.h"
+CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_check.cu.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\crt\common_functions.h"
+CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_check.cu.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\crt\device_double_functions.h"
+CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_check.cu.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\crt\device_double_functions.hpp"
+CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_check.cu.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\crt\device_functions.h"
+CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_check.cu.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\crt\device_functions.hpp"
+CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_check.cu.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\crt\func_macro.h"
+CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_check.cu.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\crt\host_config.h"
+CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_check.cu.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\crt\host_defines.h"
+CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_check.cu.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\crt\math_functions.h"
+CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_check.cu.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\crt\math_functions.hpp"
+CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_check.cu.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\crt\sm_70_rt.h"
+CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_check.cu.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\crt\sm_70_rt.hpp"
+CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_check.cu.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\cuda_device_runtime_api.h"
+CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_check.cu.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\cuda_runtime.h"
+CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_check.cu.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\cuda_runtime_api.h"
+CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_check.cu.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\cuda_surface_types.h"
+CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_check.cu.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\cuda_texture_types.h"
+CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_check.cu.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\device_atomic_functions.h"
+CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_check.cu.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\device_atomic_functions.hpp"
+CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_check.cu.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\device_launch_parameters.h"
+CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_check.cu.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\device_types.h"
+CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_check.cu.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\driver_functions.h"
+CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_check.cu.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\driver_types.h"
+CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_check.cu.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\library_types.h"
+CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_check.cu.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\math_constants.h"
+CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_check.cu.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\sm_20_atomic_functions.h"
+CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_check.cu.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\sm_20_atomic_functions.hpp"
+CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_check.cu.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\sm_20_intrinsics.h"
+CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_check.cu.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\sm_20_intrinsics.hpp"
+CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_check.cu.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\sm_30_intrinsics.h"
+CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_check.cu.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\sm_30_intrinsics.hpp"
+CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_check.cu.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\sm_32_atomic_functions.h"
+CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_check.cu.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\sm_32_atomic_functions.hpp"
+CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_check.cu.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\sm_32_intrinsics.h"
+CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_check.cu.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\sm_32_intrinsics.hpp"
+CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_check.cu.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\sm_35_atomic_functions.h"
+CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_check.cu.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\sm_35_intrinsics.h"
+CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_check.cu.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\sm_60_atomic_functions.h"
+CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_check.cu.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\sm_60_atomic_functions.hpp"
+CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_check.cu.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\sm_61_intrinsics.h"
+CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_check.cu.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\sm_61_intrinsics.hpp"
+CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_check.cu.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\surface_functions.h"
+CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_check.cu.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\surface_indirect_functions.h"
+CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_check.cu.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\surface_types.h"
+CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_check.cu.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\texture_fetch_functions.h"
+CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_check.cu.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\texture_indirect_functions.h"
+CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_check.cu.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\texture_types.h"
+CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_check.cu.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\vector_functions.h"
+CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_check.cu.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\vector_functions.hpp"
+CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_check.cu.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\vector_types.h"
+CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_check.cu.obj: ..\src\ccd_gpu_bvh_check.cu
+CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_check.cu.obj: ..\src\ccd_gpu_bvh_check.cuh
+CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_check.cu.obj: ..\src\ccd_oneblockoneface.cuh
+CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_check.cu.obj: ..\src\gpu_mesh.h
 
 CMakeFiles\objViewer.dir\src\ccd_no_cpu_memory.cu.obj: ..\BVH\util.cuh
 CMakeFiles\objViewer.dir\src\ccd_no_cpu_memory.cu.obj: ..\cudalib\helper_cuda.h
@@ -395,6 +395,75 @@ CMakeFiles\objViewer.dir\src\ccd.cpp.obj: "C:\Program Files\NVIDIA GPU Computing
 CMakeFiles\objViewer.dir\src\ccd.cpp.obj: ..\src\ccd.cpp
 CMakeFiles\objViewer.dir\src\ccd.cpp.obj: ..\src\cubic.h
 
+CMakeFiles\objViewer.dir\src\ccd_cpu_bvh_cd.cpp.obj: ..\BVH\util.cuh
+CMakeFiles\objViewer.dir\src\ccd_cpu_bvh_cd.cpp.obj: ..\cudalib\helper_cuda.h
+CMakeFiles\objViewer.dir\src\ccd_cpu_bvh_cd.cpp.obj: ..\cudalib\helper_string.h
+CMakeFiles\objViewer.dir\src\ccd_cpu_bvh_cd.cpp.obj: ..\inc\aabb.h
+CMakeFiles\objViewer.dir\src\ccd_cpu_bvh_cd.cpp.obj: ..\inc\box.h
+CMakeFiles\objViewer.dir\src\ccd_cpu_bvh_cd.cpp.obj: ..\inc\edge.h
+CMakeFiles\objViewer.dir\src\ccd_cpu_bvh_cd.cpp.obj: ..\inc\forceline.h
+CMakeFiles\objViewer.dir\src\ccd_cpu_bvh_cd.cpp.obj: ..\inc\mat3f.h
+CMakeFiles\objViewer.dir\src\ccd_cpu_bvh_cd.cpp.obj: ..\inc\tri.h
+CMakeFiles\objViewer.dir\src\ccd_cpu_bvh_cd.cpp.obj: ..\inc\vec3f.h
+CMakeFiles\objViewer.dir\src\ccd_cpu_bvh_cd.cpp.obj: ..\inc\vec3fcu.cuh
+CMakeFiles\objViewer.dir\src\ccd_cpu_bvh_cd.cpp.obj: ..\src\cmesh.h
+CMakeFiles\objViewer.dir\src\ccd_cpu_bvh_cd.cpp.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\builtin_types.h"
+CMakeFiles\objViewer.dir\src\ccd_cpu_bvh_cd.cpp.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\channel_descriptor.h"
+CMakeFiles\objViewer.dir\src\ccd_cpu_bvh_cd.cpp.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\crt\common_functions.h"
+CMakeFiles\objViewer.dir\src\ccd_cpu_bvh_cd.cpp.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\crt\device_double_functions.h"
+CMakeFiles\objViewer.dir\src\ccd_cpu_bvh_cd.cpp.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\crt\device_double_functions.hpp"
+CMakeFiles\objViewer.dir\src\ccd_cpu_bvh_cd.cpp.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\crt\device_functions.h"
+CMakeFiles\objViewer.dir\src\ccd_cpu_bvh_cd.cpp.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\crt\device_functions.hpp"
+CMakeFiles\objViewer.dir\src\ccd_cpu_bvh_cd.cpp.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\crt\func_macro.h"
+CMakeFiles\objViewer.dir\src\ccd_cpu_bvh_cd.cpp.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\crt\host_config.h"
+CMakeFiles\objViewer.dir\src\ccd_cpu_bvh_cd.cpp.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\crt\host_defines.h"
+CMakeFiles\objViewer.dir\src\ccd_cpu_bvh_cd.cpp.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\crt\math_functions.h"
+CMakeFiles\objViewer.dir\src\ccd_cpu_bvh_cd.cpp.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\crt\math_functions.hpp"
+CMakeFiles\objViewer.dir\src\ccd_cpu_bvh_cd.cpp.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\crt\sm_70_rt.h"
+CMakeFiles\objViewer.dir\src\ccd_cpu_bvh_cd.cpp.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\crt\sm_70_rt.hpp"
+CMakeFiles\objViewer.dir\src\ccd_cpu_bvh_cd.cpp.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\cuda_device_runtime_api.h"
+CMakeFiles\objViewer.dir\src\ccd_cpu_bvh_cd.cpp.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\cuda_runtime.h"
+CMakeFiles\objViewer.dir\src\ccd_cpu_bvh_cd.cpp.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\cuda_runtime_api.h"
+CMakeFiles\objViewer.dir\src\ccd_cpu_bvh_cd.cpp.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\cuda_surface_types.h"
+CMakeFiles\objViewer.dir\src\ccd_cpu_bvh_cd.cpp.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\cuda_texture_types.h"
+CMakeFiles\objViewer.dir\src\ccd_cpu_bvh_cd.cpp.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\device_atomic_functions.h"
+CMakeFiles\objViewer.dir\src\ccd_cpu_bvh_cd.cpp.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\device_atomic_functions.hpp"
+CMakeFiles\objViewer.dir\src\ccd_cpu_bvh_cd.cpp.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\device_launch_parameters.h"
+CMakeFiles\objViewer.dir\src\ccd_cpu_bvh_cd.cpp.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\device_types.h"
+CMakeFiles\objViewer.dir\src\ccd_cpu_bvh_cd.cpp.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\driver_functions.h"
+CMakeFiles\objViewer.dir\src\ccd_cpu_bvh_cd.cpp.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\driver_types.h"
+CMakeFiles\objViewer.dir\src\ccd_cpu_bvh_cd.cpp.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\library_types.h"
+CMakeFiles\objViewer.dir\src\ccd_cpu_bvh_cd.cpp.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\math_constants.h"
+CMakeFiles\objViewer.dir\src\ccd_cpu_bvh_cd.cpp.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\sm_20_atomic_functions.h"
+CMakeFiles\objViewer.dir\src\ccd_cpu_bvh_cd.cpp.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\sm_20_atomic_functions.hpp"
+CMakeFiles\objViewer.dir\src\ccd_cpu_bvh_cd.cpp.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\sm_20_intrinsics.h"
+CMakeFiles\objViewer.dir\src\ccd_cpu_bvh_cd.cpp.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\sm_20_intrinsics.hpp"
+CMakeFiles\objViewer.dir\src\ccd_cpu_bvh_cd.cpp.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\sm_30_intrinsics.h"
+CMakeFiles\objViewer.dir\src\ccd_cpu_bvh_cd.cpp.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\sm_30_intrinsics.hpp"
+CMakeFiles\objViewer.dir\src\ccd_cpu_bvh_cd.cpp.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\sm_32_atomic_functions.h"
+CMakeFiles\objViewer.dir\src\ccd_cpu_bvh_cd.cpp.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\sm_32_atomic_functions.hpp"
+CMakeFiles\objViewer.dir\src\ccd_cpu_bvh_cd.cpp.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\sm_32_intrinsics.h"
+CMakeFiles\objViewer.dir\src\ccd_cpu_bvh_cd.cpp.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\sm_32_intrinsics.hpp"
+CMakeFiles\objViewer.dir\src\ccd_cpu_bvh_cd.cpp.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\sm_35_atomic_functions.h"
+CMakeFiles\objViewer.dir\src\ccd_cpu_bvh_cd.cpp.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\sm_35_intrinsics.h"
+CMakeFiles\objViewer.dir\src\ccd_cpu_bvh_cd.cpp.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\sm_60_atomic_functions.h"
+CMakeFiles\objViewer.dir\src\ccd_cpu_bvh_cd.cpp.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\sm_60_atomic_functions.hpp"
+CMakeFiles\objViewer.dir\src\ccd_cpu_bvh_cd.cpp.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\sm_61_intrinsics.h"
+CMakeFiles\objViewer.dir\src\ccd_cpu_bvh_cd.cpp.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\sm_61_intrinsics.hpp"
+CMakeFiles\objViewer.dir\src\ccd_cpu_bvh_cd.cpp.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\surface_functions.h"
+CMakeFiles\objViewer.dir\src\ccd_cpu_bvh_cd.cpp.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\surface_indirect_functions.h"
+CMakeFiles\objViewer.dir\src\ccd_cpu_bvh_cd.cpp.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\surface_types.h"
+CMakeFiles\objViewer.dir\src\ccd_cpu_bvh_cd.cpp.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\texture_fetch_functions.h"
+CMakeFiles\objViewer.dir\src\ccd_cpu_bvh_cd.cpp.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\texture_indirect_functions.h"
+CMakeFiles\objViewer.dir\src\ccd_cpu_bvh_cd.cpp.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\texture_types.h"
+CMakeFiles\objViewer.dir\src\ccd_cpu_bvh_cd.cpp.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\vector_functions.h"
+CMakeFiles\objViewer.dir\src\ccd_cpu_bvh_cd.cpp.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\vector_functions.hpp"
+CMakeFiles\objViewer.dir\src\ccd_cpu_bvh_cd.cpp.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\vector_types.h"
+CMakeFiles\objViewer.dir\src\ccd_cpu_bvh_cd.cpp.obj: ..\src\ccd_cpu_bvh_cd.cpp
+CMakeFiles\objViewer.dir\src\ccd_cpu_bvh_cd.cpp.obj: ..\src\ccd_cpu_bvh_cd.h
+CMakeFiles\objViewer.dir\src\ccd_cpu_bvh_cd.cpp.obj: ..\src\ccd_oneblockoneface.cuh
+CMakeFiles\objViewer.dir\src\ccd_cpu_bvh_cd.cpp.obj: ..\src\gpu_mesh.h
+
 CMakeFiles\objViewer.dir\src\cmesh.cpp.obj: ..\inc\aabb.h
 CMakeFiles\objViewer.dir\src\cmesh.cpp.obj: ..\inc\box.h
 CMakeFiles\objViewer.dir\src\cmesh.cpp.obj: ..\inc\edge.h
@@ -521,6 +590,7 @@ CMakeFiles\objViewer.dir\src\cmodel.cpp.obj: "C:\Program Files\NVIDIA GPU Comput
 CMakeFiles\objViewer.dir\src\cmodel.cpp.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\vector_functions.hpp"
 CMakeFiles\objViewer.dir\src\cmodel.cpp.obj: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\vector_types.h"
 CMakeFiles\objViewer.dir\src\cmodel.cpp.obj: ..\src\ccd.h
+CMakeFiles\objViewer.dir\src\cmodel.cpp.obj: ..\src\ccd_cpu_bvh_cd.h
 CMakeFiles\objViewer.dir\src\cmodel.cpp.obj: ..\src\ccd_oneblockoneface.cuh
 CMakeFiles\objViewer.dir\src\cmodel.cpp.obj: ..\src\cmesh.h
 CMakeFiles\objViewer.dir\src\cmodel.cpp.obj: ..\src\cmodel.cpp
@@ -596,6 +666,7 @@ CMakeFiles\objViewer.dir\src\gpu_mesh.cpp.obj: ..\src\cmesh.h
 CMakeFiles\objViewer.dir\src\gpu_mesh.cpp.obj: ..\src\gpu_mesh.cpp
 CMakeFiles\objViewer.dir\src\gpu_mesh.cpp.obj: ..\src\gpu_mesh.h
 
+CMakeFiles\objViewer.dir\src\obj-viewer.cpp.obj: ..\external\cxxopts\include\cxxopts.hpp
 CMakeFiles\objViewer.dir\src\obj-viewer.cpp.obj: ..\inc\GL\glext.h
 CMakeFiles\objViewer.dir\src\obj-viewer.cpp.obj: ..\inc\GL\glh_convenience.h
 CMakeFiles\objViewer.dir\src\obj-viewer.cpp.obj: ..\inc\GL\glh_genext.h

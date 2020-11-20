@@ -7,11 +7,11 @@ CUDA_FLAGS = -D_WINDOWS -Xcompiler=" /GR /EHsc" -Xcompiler="-O2 -Ob2" -DNDEBUG -
 
 CUDA_DEFINES = 
 
-CUDA_INCLUDES = -IC:\PROGRA~1\NVIDIA~2\CUDA\v10.1\include -IC:\Users\lidan\Desktop\last\inc -IC:\Users\lidan\Desktop\last\cudalib -IC:\Users\lidan\Desktop\last\src -IC:\Users\lidan\Desktop\last\BVH 
+CUDA_INCLUDES = -IC:\PROGRA~1\NVIDIA~2\CUDA\v10.1\include -IC:\Users\lidan\Desktop\last\inc -IC:\Users\lidan\Desktop\last\cudalib -IC:\Users\lidan\Desktop\last\src -IC:\Users\lidan\Desktop\last\BVH -IC:\Users\lidan\Desktop\last\external\cxxopts\include 
 
 CXX_FLAGS = /DWIN32 /D_WINDOWS /GR /EHsc /openmp /O2 /Ob2 /DNDEBUG -MD   -std:c++14
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -IC:\PROGRA~1\NVIDIA~2\CUDA\v10.1\include -IC:\Users\lidan\Desktop\last\inc -IC:\Users\lidan\Desktop\last\cudalib -IC:\Users\lidan\Desktop\last\src -IC:\Users\lidan\Desktop\last\BVH 
+CXX_INCLUDES = -IC:\PROGRA~1\NVIDIA~2\CUDA\v10.1\include -IC:\Users\lidan\Desktop\last\inc -IC:\Users\lidan\Desktop\last\cudalib -IC:\Users\lidan\Desktop\last\src -IC:\Users\lidan\Desktop\last\BVH -IC:\Users\lidan\Desktop\last\external\cxxopts\include 
 

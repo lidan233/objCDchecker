@@ -15,6 +15,11 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.17.3/CMakeSystem.cmake"
   "../cmake/LidanBase.cmake"
   "../cmake/LidanBuild.cmake"
+  "../external/cxxopts/CMakeLists.txt"
+  "../external/cxxopts/cxxopts-config.cmake.in"
+  "../external/cxxopts/src/CMakeLists.txt"
+  "../external/cxxopts/test/CMakeLists.txt"
+  "D:/software/clion/CLion 2020.2.3/bin/cmake/win/share/cmake-3.17/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in"
   "D:/software/clion/CLion 2020.2.3/bin/cmake/win/share/cmake-3.17/Modules/CMakeCInformation.cmake"
   "D:/software/clion/CLion 2020.2.3/bin/cmake/win/share/cmake-3.17/Modules/CMakeCUDAInformation.cmake"
   "D:/software/clion/CLion 2020.2.3/bin/cmake/win/share/cmake-3.17/Modules/CMakeCXXInformation.cmake"
@@ -24,6 +29,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "D:/software/clion/CLion 2020.2.3/bin/cmake/win/share/cmake-3.17/Modules/CMakeGenericSystem.cmake"
   "D:/software/clion/CLion 2020.2.3/bin/cmake/win/share/cmake-3.17/Modules/CMakeInitializeConfigs.cmake"
   "D:/software/clion/CLion 2020.2.3/bin/cmake/win/share/cmake-3.17/Modules/CMakeLanguageInformation.cmake"
+  "D:/software/clion/CLion 2020.2.3/bin/cmake/win/share/cmake-3.17/Modules/CMakePackageConfigHelpers.cmake"
   "D:/software/clion/CLion 2020.2.3/bin/cmake/win/share/cmake-3.17/Modules/CMakeRCInformation.cmake"
   "D:/software/clion/CLion 2020.2.3/bin/cmake/win/share/cmake-3.17/Modules/CMakeSystemSpecificInformation.cmake"
   "D:/software/clion/CLion 2020.2.3/bin/cmake/win/share/cmake-3.17/Modules/CMakeSystemSpecificInitialize.cmake"
@@ -35,6 +41,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "D:/software/clion/CLion 2020.2.3/bin/cmake/win/share/cmake-3.17/Modules/FindCUDA/select_compute_arch.cmake"
   "D:/software/clion/CLion 2020.2.3/bin/cmake/win/share/cmake-3.17/Modules/FindPackageHandleStandardArgs.cmake"
   "D:/software/clion/CLion 2020.2.3/bin/cmake/win/share/cmake-3.17/Modules/FindPackageMessage.cmake"
+  "D:/software/clion/CLion 2020.2.3/bin/cmake/win/share/cmake-3.17/Modules/GNUInstallDirs.cmake"
   "D:/software/clion/CLion 2020.2.3/bin/cmake/win/share/cmake-3.17/Modules/Platform/Windows-MSVC-C.cmake"
   "D:/software/clion/CLion 2020.2.3/bin/cmake/win/share/cmake-3.17/Modules/Platform/Windows-MSVC-CXX.cmake"
   "D:/software/clion/CLion 2020.2.3/bin/cmake/win/share/cmake-3.17/Modules/Platform/Windows-MSVC.cmake"
@@ -42,6 +49,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "D:/software/clion/CLion 2020.2.3/bin/cmake/win/share/cmake-3.17/Modules/Platform/Windows.cmake"
   "D:/software/clion/CLion 2020.2.3/bin/cmake/win/share/cmake-3.17/Modules/Platform/WindowsPaths.cmake"
   "D:/software/clion/CLion 2020.2.3/bin/cmake/win/share/cmake-3.17/Modules/ProcessorCount.cmake"
+  "D:/software/clion/CLion 2020.2.3/bin/cmake/win/share/cmake-3.17/Modules/WriteBasicConfigVersionFile.cmake"
   )
 
 # The corresponding makefile is:
@@ -53,9 +61,15 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
+  "external/cxxopts/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "external/cxxopts/src/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "external/cxxopts/test/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/objViewer.dir/DependInfo.cmake"
+  "external/cxxopts/src/CMakeFiles/example.dir/DependInfo.cmake"
+  "external/cxxopts/test/CMakeFiles/options_test.dir/DependInfo.cmake"
+  "external/cxxopts/test/CMakeFiles/link_test.dir/DependInfo.cmake"
   )

@@ -67,7 +67,7 @@ CMakeFiles/objViewer.dir/BVH/util.cu.obj
  C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.1/include/vector_types.h
  C:/Users/lidan/Desktop/last/BVH/util.cu
  C:/Users/lidan/Desktop/last/BVH/util.cuh
-CMakeFiles/objViewer.dir/src/ccd_gpu_bvh_self_check.cu.obj
+CMakeFiles/objViewer.dir/src/ccd_gpu_bvh_check.cu.obj
  ../BVH/util.cuh
  ../cudalib/helper_cuda.h
  ../cudalib/helper_string.h
@@ -132,8 +132,8 @@ CMakeFiles/objViewer.dir/src/ccd_gpu_bvh_self_check.cu.obj
  C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.1/include/vector_functions.h
  C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.1/include/vector_functions.hpp
  C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.1/include/vector_types.h
- C:/Users/lidan/Desktop/last/src/ccd_gpu_bvh_self_check.cu
- C:/Users/lidan/Desktop/last/src/ccd_gpu_bvh_self_check.cuh
+ C:/Users/lidan/Desktop/last/src/ccd_gpu_bvh_check.cu
+ C:/Users/lidan/Desktop/last/src/ccd_gpu_bvh_check.cuh
  C:/Users/lidan/Desktop/last/src/ccd_oneblockoneface.cuh
  C:/Users/lidan/Desktop/last/src/gpu_mesh.h
 CMakeFiles/objViewer.dir/src/ccd_no_cpu_memory.cu.obj
@@ -395,6 +395,75 @@ CMakeFiles/objViewer.dir/src/ccd.cpp.obj
  C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.1/include/vector_types.h
  C:/Users/lidan/Desktop/last/src/ccd.cpp
  C:/Users/lidan/Desktop/last/src/cubic.h
+CMakeFiles/objViewer.dir/src/ccd_cpu_bvh_cd.cpp.obj
+ ../BVH/util.cuh
+ ../cudalib/helper_cuda.h
+ ../cudalib/helper_string.h
+ ../inc/aabb.h
+ ../inc/box.h
+ ../inc/edge.h
+ ../inc/forceline.h
+ ../inc/mat3f.h
+ ../inc/tri.h
+ ../inc/vec3f.h
+ ../inc/vec3fcu.cuh
+ ../src/cmesh.h
+ C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.1/include/builtin_types.h
+ C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.1/include/channel_descriptor.h
+ C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.1/include/crt/common_functions.h
+ C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.1/include/crt/device_double_functions.h
+ C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.1/include/crt/device_double_functions.hpp
+ C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.1/include/crt/device_functions.h
+ C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.1/include/crt/device_functions.hpp
+ C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.1/include/crt/func_macro.h
+ C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.1/include/crt/host_config.h
+ C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.1/include/crt/host_defines.h
+ C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.1/include/crt/math_functions.h
+ C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.1/include/crt/math_functions.hpp
+ C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.1/include/crt/sm_70_rt.h
+ C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.1/include/crt/sm_70_rt.hpp
+ C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.1/include/cuda_device_runtime_api.h
+ C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.1/include/cuda_runtime.h
+ C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.1/include/cuda_runtime_api.h
+ C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.1/include/cuda_surface_types.h
+ C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.1/include/cuda_texture_types.h
+ C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.1/include/device_atomic_functions.h
+ C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.1/include/device_atomic_functions.hpp
+ C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.1/include/device_launch_parameters.h
+ C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.1/include/device_types.h
+ C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.1/include/driver_functions.h
+ C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.1/include/driver_types.h
+ C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.1/include/library_types.h
+ C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.1/include/math_constants.h
+ C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.1/include/sm_20_atomic_functions.h
+ C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.1/include/sm_20_atomic_functions.hpp
+ C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.1/include/sm_20_intrinsics.h
+ C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.1/include/sm_20_intrinsics.hpp
+ C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.1/include/sm_30_intrinsics.h
+ C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.1/include/sm_30_intrinsics.hpp
+ C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.1/include/sm_32_atomic_functions.h
+ C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.1/include/sm_32_atomic_functions.hpp
+ C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.1/include/sm_32_intrinsics.h
+ C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.1/include/sm_32_intrinsics.hpp
+ C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.1/include/sm_35_atomic_functions.h
+ C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.1/include/sm_35_intrinsics.h
+ C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.1/include/sm_60_atomic_functions.h
+ C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.1/include/sm_60_atomic_functions.hpp
+ C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.1/include/sm_61_intrinsics.h
+ C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.1/include/sm_61_intrinsics.hpp
+ C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.1/include/surface_functions.h
+ C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.1/include/surface_indirect_functions.h
+ C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.1/include/surface_types.h
+ C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.1/include/texture_fetch_functions.h
+ C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.1/include/texture_indirect_functions.h
+ C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.1/include/texture_types.h
+ C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.1/include/vector_functions.h
+ C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.1/include/vector_functions.hpp
+ C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.1/include/vector_types.h
+ C:/Users/lidan/Desktop/last/src/ccd_cpu_bvh_cd.cpp
+ C:/Users/lidan/Desktop/last/src/ccd_cpu_bvh_cd.h
+ C:/Users/lidan/Desktop/last/src/ccd_oneblockoneface.cuh
+ C:/Users/lidan/Desktop/last/src/gpu_mesh.h
 CMakeFiles/objViewer.dir/src/cmesh.cpp.obj
  ../inc/aabb.h
  ../inc/box.h
@@ -522,6 +591,7 @@ CMakeFiles/objViewer.dir/src/cmodel.cpp.obj
  C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.1/include/vector_functions.hpp
  C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.1/include/vector_types.h
  C:/Users/lidan/Desktop/last/src/ccd.h
+ C:/Users/lidan/Desktop/last/src/ccd_cpu_bvh_cd.h
  C:/Users/lidan/Desktop/last/src/ccd_oneblockoneface.cuh
  C:/Users/lidan/Desktop/last/src/cmesh.h
  C:/Users/lidan/Desktop/last/src/cmodel.cpp
@@ -597,6 +667,7 @@ CMakeFiles/objViewer.dir/src/gpu_mesh.cpp.obj
  C:/Users/lidan/Desktop/last/src/gpu_mesh.cpp
  C:/Users/lidan/Desktop/last/src/gpu_mesh.h
 CMakeFiles/objViewer.dir/src/obj-viewer.cpp.obj
+ ../external/cxxopts/include/cxxopts.hpp
  ../inc/GL/glext.h
  ../inc/GL/glh_convenience.h
  ../inc/GL/glh_genext.h

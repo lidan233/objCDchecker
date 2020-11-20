@@ -58,18 +58,79 @@ CMAKE_BINARY_DIR = C:\Users\lidan\Desktop\last\cmake-build-release
 
 # The main recursive "all" target.
 all: CMakeFiles\objViewer.dir\all
+all: external\cxxopts\all
 
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall:
+preinstall: external\cxxopts\preinstall
 
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: CMakeFiles\objViewer.dir\clean
+clean: external\cxxopts\clean
 
 .PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory external\cxxopts
+
+# Recursive "all" directory target.
+external\cxxopts\all: external\cxxopts\src\all
+external\cxxopts\all: external\cxxopts\test\all
+
+.PHONY : external\cxxopts\all
+
+# Recursive "preinstall" directory target.
+external\cxxopts\preinstall: external\cxxopts\src\preinstall
+external\cxxopts\preinstall: external\cxxopts\test\preinstall
+
+.PHONY : external\cxxopts\preinstall
+
+# Recursive "clean" directory target.
+external\cxxopts\clean: external\cxxopts\src\clean
+external\cxxopts\clean: external\cxxopts\test\clean
+
+.PHONY : external\cxxopts\clean
+
+#=============================================================================
+# Directory level rules for directory external\cxxopts\src
+
+# Recursive "all" directory target.
+external\cxxopts\src\all: external\cxxopts\src\CMakeFiles\example.dir\all
+
+.PHONY : external\cxxopts\src\all
+
+# Recursive "preinstall" directory target.
+external\cxxopts\src\preinstall:
+
+.PHONY : external\cxxopts\src\preinstall
+
+# Recursive "clean" directory target.
+external\cxxopts\src\clean: external\cxxopts\src\CMakeFiles\example.dir\clean
+
+.PHONY : external\cxxopts\src\clean
+
+#=============================================================================
+# Directory level rules for directory external\cxxopts\test
+
+# Recursive "all" directory target.
+external\cxxopts\test\all: external\cxxopts\test\CMakeFiles\options_test.dir\all
+external\cxxopts\test\all: external\cxxopts\test\CMakeFiles\link_test.dir\all
+
+.PHONY : external\cxxopts\test\all
+
+# Recursive "preinstall" directory target.
+external\cxxopts\test\preinstall:
+
+.PHONY : external\cxxopts\test\preinstall
+
+# Recursive "clean" directory target.
+external\cxxopts\test\clean: external\cxxopts\test\CMakeFiles\options_test.dir\clean
+external\cxxopts\test\clean: external\cxxopts\test\CMakeFiles\link_test.dir\clean
+
+.PHONY : external\cxxopts\test\clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/objViewer.dir
@@ -78,7 +139,7 @@ clean: CMakeFiles\objViewer.dir\clean
 CMakeFiles\objViewer.dir\all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\objViewer.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\objViewer.dir\depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\objViewer.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\objViewer.dir\build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\lidan\Desktop\last\cmake-build-release\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13 "Built target objViewer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\lidan\Desktop\last\cmake-build-release\CMakeFiles --progress-num=6,7,8,9,10,11,12,13,14,15,16,17,18 "Built target objViewer"
 .PHONY : CMakeFiles\objViewer.dir\all
 
 # Build rule for subdir invocation for target.
@@ -97,6 +158,87 @@ objViewer: CMakeFiles\objViewer.dir\rule
 CMakeFiles\objViewer.dir\clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\objViewer.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\objViewer.dir\clean
 .PHONY : CMakeFiles\objViewer.dir\clean
+
+#=============================================================================
+# Target rules for target external/cxxopts/src/CMakeFiles/example.dir
+
+# All Build rule for target.
+external\cxxopts\src\CMakeFiles\example.dir\all:
+	$(MAKE) $(MAKESILENT) -f external\cxxopts\src\CMakeFiles\example.dir\build.make /nologo -$(MAKEFLAGS) external\cxxopts\src\CMakeFiles\example.dir\depend
+	$(MAKE) $(MAKESILENT) -f external\cxxopts\src\CMakeFiles\example.dir\build.make /nologo -$(MAKEFLAGS) external\cxxopts\src\CMakeFiles\example.dir\build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\lidan\Desktop\last\cmake-build-release\CMakeFiles --progress-num=1,2 "Built target example"
+.PHONY : external\cxxopts\src\CMakeFiles\example.dir\all
+
+# Build rule for subdir invocation for target.
+external\cxxopts\src\CMakeFiles\example.dir\rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\lidan\Desktop\last\cmake-build-release\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) external\cxxopts\src\CMakeFiles\example.dir\all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\lidan\Desktop\last\cmake-build-release\CMakeFiles 0
+.PHONY : external\cxxopts\src\CMakeFiles\example.dir\rule
+
+# Convenience name for target.
+example: external\cxxopts\src\CMakeFiles\example.dir\rule
+
+.PHONY : example
+
+# clean rule for target.
+external\cxxopts\src\CMakeFiles\example.dir\clean:
+	$(MAKE) $(MAKESILENT) -f external\cxxopts\src\CMakeFiles\example.dir\build.make /nologo -$(MAKEFLAGS) external\cxxopts\src\CMakeFiles\example.dir\clean
+.PHONY : external\cxxopts\src\CMakeFiles\example.dir\clean
+
+#=============================================================================
+# Target rules for target external/cxxopts/test/CMakeFiles/options_test.dir
+
+# All Build rule for target.
+external\cxxopts\test\CMakeFiles\options_test.dir\all:
+	$(MAKE) $(MAKESILENT) -f external\cxxopts\test\CMakeFiles\options_test.dir\build.make /nologo -$(MAKEFLAGS) external\cxxopts\test\CMakeFiles\options_test.dir\depend
+	$(MAKE) $(MAKESILENT) -f external\cxxopts\test\CMakeFiles\options_test.dir\build.make /nologo -$(MAKEFLAGS) external\cxxopts\test\CMakeFiles\options_test.dir\build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\lidan\Desktop\last\cmake-build-release\CMakeFiles --progress-num=19,20,21 "Built target options_test"
+.PHONY : external\cxxopts\test\CMakeFiles\options_test.dir\all
+
+# Build rule for subdir invocation for target.
+external\cxxopts\test\CMakeFiles\options_test.dir\rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\lidan\Desktop\last\cmake-build-release\CMakeFiles 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) external\cxxopts\test\CMakeFiles\options_test.dir\all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\lidan\Desktop\last\cmake-build-release\CMakeFiles 0
+.PHONY : external\cxxopts\test\CMakeFiles\options_test.dir\rule
+
+# Convenience name for target.
+options_test: external\cxxopts\test\CMakeFiles\options_test.dir\rule
+
+.PHONY : options_test
+
+# clean rule for target.
+external\cxxopts\test\CMakeFiles\options_test.dir\clean:
+	$(MAKE) $(MAKESILENT) -f external\cxxopts\test\CMakeFiles\options_test.dir\build.make /nologo -$(MAKEFLAGS) external\cxxopts\test\CMakeFiles\options_test.dir\clean
+.PHONY : external\cxxopts\test\CMakeFiles\options_test.dir\clean
+
+#=============================================================================
+# Target rules for target external/cxxopts/test/CMakeFiles/link_test.dir
+
+# All Build rule for target.
+external\cxxopts\test\CMakeFiles\link_test.dir\all:
+	$(MAKE) $(MAKESILENT) -f external\cxxopts\test\CMakeFiles\link_test.dir\build.make /nologo -$(MAKEFLAGS) external\cxxopts\test\CMakeFiles\link_test.dir\depend
+	$(MAKE) $(MAKESILENT) -f external\cxxopts\test\CMakeFiles\link_test.dir\build.make /nologo -$(MAKEFLAGS) external\cxxopts\test\CMakeFiles\link_test.dir\build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\lidan\Desktop\last\cmake-build-release\CMakeFiles --progress-num=3,4,5 "Built target link_test"
+.PHONY : external\cxxopts\test\CMakeFiles\link_test.dir\all
+
+# Build rule for subdir invocation for target.
+external\cxxopts\test\CMakeFiles\link_test.dir\rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\lidan\Desktop\last\cmake-build-release\CMakeFiles 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) external\cxxopts\test\CMakeFiles\link_test.dir\all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\lidan\Desktop\last\cmake-build-release\CMakeFiles 0
+.PHONY : external\cxxopts\test\CMakeFiles\link_test.dir\rule
+
+# Convenience name for target.
+link_test: external\cxxopts\test\CMakeFiles\link_test.dir\rule
+
+.PHONY : link_test
+
+# clean rule for target.
+external\cxxopts\test\CMakeFiles\link_test.dir\clean:
+	$(MAKE) $(MAKESILENT) -f external\cxxopts\test\CMakeFiles\link_test.dir\build.make /nologo -$(MAKEFLAGS) external\cxxopts\test\CMakeFiles\link_test.dir\clean
+.PHONY : external\cxxopts\test\CMakeFiles\link_test.dir\clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

@@ -67,7 +67,7 @@ CMakeFiles/objViewer.dir/BVH/util.cu.obj
  C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.1/include/vector_types.h
  C:/Users/lidan/Desktop/last/BVH/util.cu
  C:/Users/lidan/Desktop/last/BVH/util.cuh
-CMakeFiles/objViewer.dir/src/ccd_gpu_bvh_self_check.cu.obj
+CMakeFiles/objViewer.dir/src/ccd_gpu_bvh_check.cu.obj
  ../BVH/util.cuh
  ../cudalib/helper_cuda.h
  ../cudalib/helper_string.h
@@ -132,8 +132,8 @@ CMakeFiles/objViewer.dir/src/ccd_gpu_bvh_self_check.cu.obj
  C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.1/include/vector_functions.h
  C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.1/include/vector_functions.hpp
  C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.1/include/vector_types.h
- C:/Users/lidan/Desktop/last/src/ccd_gpu_bvh_self_check.cu
- C:/Users/lidan/Desktop/last/src/ccd_gpu_bvh_self_check.cuh
+ C:/Users/lidan/Desktop/last/src/ccd_gpu_bvh_check.cu
+ C:/Users/lidan/Desktop/last/src/ccd_gpu_bvh_check.cuh
  C:/Users/lidan/Desktop/last/src/ccd_oneblockoneface.cuh
  C:/Users/lidan/Desktop/last/src/gpu_mesh.h
 CMakeFiles/objViewer.dir/src/ccd_no_cpu_memory.cu.obj
@@ -667,6 +667,7 @@ CMakeFiles/objViewer.dir/src/gpu_mesh.cpp.obj
  C:/Users/lidan/Desktop/last/src/gpu_mesh.cpp
  C:/Users/lidan/Desktop/last/src/gpu_mesh.h
 CMakeFiles/objViewer.dir/src/obj-viewer.cpp.obj
+ ../external/cxxopts/include/cxxopts.hpp
  ../inc/GL/glext.h
  ../inc/GL/glh_convenience.h
  ../inc/GL/glh_genext.h

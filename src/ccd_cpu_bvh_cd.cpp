@@ -118,6 +118,7 @@ set<int>* ccd_cpu_bvh_cd::checkSelfCDByBVH(gpu_mesh* mesh1)
             {
                 collusion.insert(i/3) ;
                 collusion.insert(*j) ;
+
                 std::cout<<"bvh cpu check there is collusion between ("<<i/3<<" ,"<<*j<<")"<<std::endl ;
 #pragma omp atomic
                 count += 1 ;

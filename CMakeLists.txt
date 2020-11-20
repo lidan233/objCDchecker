@@ -17,8 +17,10 @@ ADD_SUBSRC(srcdir src)
 ADD_SUBSRC(bvhdir BVH)
 ADD_SUBSRC(cudalibdir cudalib)
 
-include_directories(inc cudalib src BVH)
+add_subdirectory(external/cxxopts)
+
+include_directories(inc cudalib src BVH external/cxxopts/include)
 link_directories(lib )
 
-add_executable(objViewer  ${incdir} ${srcdir} ${cudalibdir} ${bvhdir} src/ccd_cpu_bvh_cd.cpp src/ccd_cpu_bvh_cd.h)
+add_executable(objViewer  ${incdir} ${srcdir} ${cudalibdir} ${bvhdir} )
 target_link_libraries(objViewer glut64)

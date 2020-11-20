@@ -122,6 +122,7 @@ void setting_Data_self_CD(gpu_mesh* cloth,dim3 block,dim3 thread)
 
 
     gpuErrchk( cudaGetLastError() );
+    START_GPU
     gpu_selfcheck<<<block,thread>>>(tris,
                                     trisid,
                                     result,
@@ -131,18 +132,17 @@ void setting_Data_self_CD(gpu_mesh* cloth,dim3 block,dim3 thread)
                                     cloth->getsize()
                                     ) ;
 
-
+    END_GPU
     gpuErrchk( cudaGetLastError() );
     cloth->unget_alldata() ;
     cloth->unget_dataid() ;
 }
 
-void getting_Data_self_CD(gpu_mesh* cloth)
+void getting_Data_self_CD(set<int>& collusionset,gpu_mesh* cloth)
 {
 
     vec2f* result = cloth->get_cpu_result() ;
     int* resultsize = cloth->get_cpu_size() ;
-    set<int> collusionset ;
 
     for(int i = 0 ; i < cloth->getsize()*32;i+=32)
     {
@@ -163,11 +163,11 @@ void getting_Data_self_CD(gpu_mesh* cloth)
 
 
 
-vec2f* checkSelfCDGPU(gpu_mesh* cloth)
+vec2f* checkSelfCDGPU(set<int>& clothset,gpu_mesh* cloth)
 {
     START_GPU
     setting_Data_self_CD(cloth,dim3(1000,1000,1),dim3(32,1,1)) ;
-    getting_Data_self_CD(cloth) ;
+    getting_Data_self_CD(clothset,cloth) ;
     END_GPU
     return nullptr ;
 }
@@ -198,7 +198,7 @@ __global__ void gpu_check(vec3fcu* data1,
         vec3fcu leftdata2 = data1[leftcur + 1];
         vec3fcu leftdata3 = data1[leftcur + 2];
 
-        for( int i = rightstart*3 ; i < (rightstart+rightsize)*3 && i< allrightsize*3  ; i += threadsize*3 )
+        for( int i = (rightstart+threadid)*3 ; i < (rightstart+rightsize)*3 && i< allrightsize*3  ; i += threadsize*3 )
         {
             vec3fcu next1 = data2[i] ;
             vec3fcu next2 = data2[i + 1] ;
@@ -208,11 +208,11 @@ __global__ void gpu_check(vec3fcu* data1,
             if(cutri_contact(leftdata1,leftdata2,leftdata3, next1,next2,next3))
             {
                 int collusion_id = atomicAdd(&mutexx,1) ;
-                contacted[collusion_id] = i;
+                contacted[collusion_id] = i/3;
             }
         }
 
-        if(threadid<mutexx)
+        if(threadid<mutexx&&threadid<31)
         {
             res[blockid*32+threadid+1] = vec2fcu(leftcur/3,contacted[threadid]/3) ;
         }
@@ -255,17 +255,15 @@ void setting_Data_CD(gpu_mesh* cloth,gpu_mesh* lion, dim3 block,dim3 thread)
     cloth->unget_dataid() ;
 }
 
-void getting_Data_CD(gpu_mesh* cloth,gpu_mesh* lion)
+void getting_Data_CD(set<int>& collusion_cloth,set<int>& collusion_lion,gpu_mesh* cloth,gpu_mesh* lion)
 {
     vec2f* result = cloth->get_cpu_result() ;
     int* resultsize = cloth->get_cpu_size() ;
-    set<int> collusion_cloth ;
-    set<int> collusion_lion ;
 
 
     for(int i = 0 ; i < cloth->getsize()*32;i+=32)
     {
-        for(int j = 0 ; j < result[i][0]; j++ )
+        for(int j = 1 ; j < result[i][0]; j++ )
         {
             std::cout<<"gpu check collusion begin between ("<<result[i+j+1][0]<<","<<result[i+j+1][1]<<")"<<std::endl ;
             collusion_cloth.insert(result[i+j+1][0]) ;
@@ -280,11 +278,11 @@ void getting_Data_CD(gpu_mesh* cloth,gpu_mesh* lion)
     cloth->unget_size() ;
 }
 
-vec2f* checkCDGPU(gpu_mesh* cloth,gpu_mesh* lion)
+vec2f* checkCDGPU(set<int>& clothset,set<int>& clionset,gpu_mesh* cloth,gpu_mesh* lion)
 {
     START_GPU
     setting_Data_CD(cloth,lion,dim3(1000,1000,1),dim3(32,1,1)) ;
-    getting_Data_CD(cloth,lion) ;
+    getting_Data_CD(clothset,clionset,cloth,lion) ;
     END_GPU
     return nullptr ;
 }

@@ -99,17 +99,17 @@ CMakeFiles\objViewer.dir\src\ccd_cpu_bvh_cd.cpp.s: cmake_force
  /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\objViewer.dir\src\ccd_cpu_bvh_cd.cpp.s /c C:\Users\lidan\Desktop\last\src\ccd_cpu_bvh_cd.cpp
 <<
 
-CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_self_check.cu.obj: CMakeFiles\objViewer.dir\flags.make
-CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_self_check.cu.obj: ..\src\ccd_gpu_bvh_self_check.cu
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\lidan\Desktop\last\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CUDA object CMakeFiles/objViewer.dir/src/ccd_gpu_bvh_self_check.cu.obj"
-	C:\PROGRA~1\NVIDIA~2\CUDA\v10.1\bin\nvcc.exe  $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -x cu -c C:\Users\lidan\Desktop\last\src\ccd_gpu_bvh_self_check.cu -o CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_self_check.cu.obj -Xcompiler=-FdCMakeFiles\objViewer.dir\,-FS
+CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_check.cu.obj: CMakeFiles\objViewer.dir\flags.make
+CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_check.cu.obj: ..\src\ccd_gpu_bvh_check.cu
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\lidan\Desktop\last\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CUDA object CMakeFiles/objViewer.dir/src/ccd_gpu_bvh_check.cu.obj"
+	C:\PROGRA~1\NVIDIA~2\CUDA\v10.1\bin\nvcc.exe  $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -x cu -c C:\Users\lidan\Desktop\last\src\ccd_gpu_bvh_check.cu -o CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_check.cu.obj -Xcompiler=-FdCMakeFiles\objViewer.dir\,-FS
 
-CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_self_check.cu.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CUDA source to CMakeFiles/objViewer.dir/src/ccd_gpu_bvh_self_check.cu.i"
+CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_check.cu.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CUDA source to CMakeFiles/objViewer.dir/src/ccd_gpu_bvh_check.cu.i"
 	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CUDA_CREATE_PREPROCESSED_SOURCE
 
-CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_self_check.cu.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CUDA source to assembly CMakeFiles/objViewer.dir/src/ccd_gpu_bvh_self_check.cu.s"
+CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_check.cu.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CUDA source to assembly CMakeFiles/objViewer.dir/src/ccd_gpu_bvh_check.cu.s"
 	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CUDA_CREATE_ASSEMBLY_SOURCE
 
 CMakeFiles\objViewer.dir\src\ccd_no_cpu_memory.cu.obj: CMakeFiles\objViewer.dir\flags.make
@@ -263,7 +263,7 @@ CMakeFiles\objViewer.dir\BVH\util.cu.s: cmake_force
 objViewer_OBJECTS = \
 "CMakeFiles\objViewer.dir\src\ccd.cpp.obj" \
 "CMakeFiles\objViewer.dir\src\ccd_cpu_bvh_cd.cpp.obj" \
-"CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_self_check.cu.obj" \
+"CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_check.cu.obj" \
 "CMakeFiles\objViewer.dir\src\ccd_no_cpu_memory.cu.obj" \
 "CMakeFiles\objViewer.dir\src\ccd_oneblockoneface.cu.obj" \
 "CMakeFiles\objViewer.dir\src\cmesh.cpp.obj" \
@@ -279,7 +279,7 @@ objViewer_EXTERNAL_OBJECTS =
 
 objViewer.exe: CMakeFiles\objViewer.dir\src\ccd.cpp.obj
 objViewer.exe: CMakeFiles\objViewer.dir\src\ccd_cpu_bvh_cd.cpp.obj
-objViewer.exe: CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_self_check.cu.obj
+objViewer.exe: CMakeFiles\objViewer.dir\src\ccd_gpu_bvh_check.cu.obj
 objViewer.exe: CMakeFiles\objViewer.dir\src\ccd_no_cpu_memory.cu.obj
 objViewer.exe: CMakeFiles\objViewer.dir\src\ccd_oneblockoneface.cu.obj
 objViewer.exe: CMakeFiles\objViewer.dir\src\cmesh.cpp.obj

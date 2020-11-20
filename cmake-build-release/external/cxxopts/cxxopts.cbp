@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="cxxopts"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="msvc8"/>
+		<Option virtualFolders="CMake Files\;CMake Files\external\;CMake Files\external\cxxopts\;CMake Files\external\cxxopts\src\;CMake Files\external\cxxopts\test\;CMake Files\cmake\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/Users/lidan/Desktop/last/cmake-build-release/external/cxxopts"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\lidan\Desktop\last\cmake-build-release\external\cxxopts\Makefile VERBOSE=1 all"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\lidan\Desktop\last\cmake-build-release\external\cxxopts\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\lidan\Desktop\last\cmake-build-release\external\cxxopts\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\lidan\Desktop\last\cmake-build-release\external\cxxopts\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="example">
+				<Option output="C:/Users/lidan/Desktop/last/cmake-build-release/external/cxxopts/src/example.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/lidan/Desktop/last/cmake-build-release/external/cxxopts/src"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.1/include"/>
+					<Add directory="C:/Users/lidan/Desktop/last/external/cxxopts/include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\lidan\Desktop\last\cmake-build-release\external\cxxopts\src\Makefile VERBOSE=1 example"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\lidan\Desktop\last\cmake-build-release\external\cxxopts\src\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\lidan\Desktop\last\cmake-build-release\external\cxxopts\src\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\lidan\Desktop\last\cmake-build-release\external\cxxopts\src\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="example/fast">
+				<Option output="C:/Users/lidan/Desktop/last/cmake-build-release/external/cxxopts/src/example.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/lidan/Desktop/last/cmake-build-release/external/cxxopts/src"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.1/include"/>
+					<Add directory="C:/Users/lidan/Desktop/last/external/cxxopts/include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\lidan\Desktop\last\cmake-build-release\external\cxxopts\src\Makefile VERBOSE=1 example/fast"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\lidan\Desktop\last\cmake-build-release\external\cxxopts\src\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\lidan\Desktop\last\cmake-build-release\external\cxxopts\src\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\lidan\Desktop\last\cmake-build-release\external\cxxopts\src\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="options_test">
+				<Option output="C:/Users/lidan/Desktop/last/cmake-build-release/external/cxxopts/test/options_test.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/lidan/Desktop/last/cmake-build-release/external/cxxopts/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.1/include"/>
+					<Add directory="C:/Users/lidan/Desktop/last/external/cxxopts/include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\lidan\Desktop\last\cmake-build-release\external\cxxopts\test\Makefile VERBOSE=1 options_test"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\lidan\Desktop\last\cmake-build-release\external\cxxopts\test\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\lidan\Desktop\last\cmake-build-release\external\cxxopts\test\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\lidan\Desktop\last\cmake-build-release\external\cxxopts\test\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="options_test/fast">
+				<Option output="C:/Users/lidan/Desktop/last/cmake-build-release/external/cxxopts/test/options_test.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/lidan/Desktop/last/cmake-build-release/external/cxxopts/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.1/include"/>
+					<Add directory="C:/Users/lidan/Desktop/last/external/cxxopts/include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\lidan\Desktop\last\cmake-build-release\external\cxxopts\test\Makefile VERBOSE=1 options_test/fast"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\lidan\Desktop\last\cmake-build-release\external\cxxopts\test\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\lidan\Desktop\last\cmake-build-release\external\cxxopts\test\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\lidan\Desktop\last\cmake-build-release\external\cxxopts\test\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="link_test">
+				<Option output="C:/Users/lidan/Desktop/last/cmake-build-release/external/cxxopts/test/link_test.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/lidan/Desktop/last/cmake-build-release/external/cxxopts/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.1/include"/>
+					<Add directory="C:/Users/lidan/Desktop/last/external/cxxopts/include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\lidan\Desktop\last\cmake-build-release\external\cxxopts\test\Makefile VERBOSE=1 link_test"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\lidan\Desktop\last\cmake-build-release\external\cxxopts\test\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\lidan\Desktop\last\cmake-build-release\external\cxxopts\test\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\lidan\Desktop\last\cmake-build-release\external\cxxopts\test\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="link_test/fast">
+				<Option output="C:/Users/lidan/Desktop/last/cmake-build-release/external/cxxopts/test/link_test.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/lidan/Desktop/last/cmake-build-release/external/cxxopts/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.1/include"/>
+					<Add directory="C:/Users/lidan/Desktop/last/external/cxxopts/include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\lidan\Desktop\last\cmake-build-release\external\cxxopts\test\Makefile VERBOSE=1 link_test/fast"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\lidan\Desktop\last\cmake-build-release\external\cxxopts\test\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\lidan\Desktop\last\cmake-build-release\external\cxxopts\test\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\lidan\Desktop\last\cmake-build-release\external\cxxopts\test\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Users/lidan/Desktop/last/external/cxxopts/src/example.cpp">
+			<Option target="example"/>
+		</Unit>
+		<Unit filename="C:/Users/lidan/Desktop/last/external/cxxopts/test/link_a.cpp">
+			<Option target="link_test"/>
+		</Unit>
+		<Unit filename="C:/Users/lidan/Desktop/last/external/cxxopts/test/link_b.cpp">
+			<Option target="link_test"/>
+		</Unit>
+		<Unit filename="C:/Users/lidan/Desktop/last/external/cxxopts/test/main.cpp">
+			<Option target="options_test"/>
+		</Unit>
+		<Unit filename="C:/Users/lidan/Desktop/last/external/cxxopts/test/options.cpp">
+			<Option target="options_test"/>
+		</Unit>
+		<Unit filename="C:/Users/lidan/Desktop/last/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="C:/Users/lidan/Desktop/last/external/cxxopts/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\external\cxxopts\"/>
+		</Unit>
+		<Unit filename="C:/Users/lidan/Desktop/last/external/cxxopts/cxxopts-config.cmake.in">
+			<Option virtualFolder="CMake Files\external\cxxopts\"/>
+		</Unit>
+		<Unit filename="C:/Users/lidan/Desktop/last/external/cxxopts/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\external\cxxopts\src\"/>
+		</Unit>
+		<Unit filename="C:/Users/lidan/Desktop/last/external/cxxopts/test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\external\cxxopts\test\"/>
+		</Unit>
+		<Unit filename="C:/Users/lidan/Desktop/last/cmake/LidanBase.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="C:/Users/lidan/Desktop/last/cmake/LidanBuild.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

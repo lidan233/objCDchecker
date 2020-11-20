@@ -121,15 +121,15 @@ static inline bool __device__ __host__ cutri_contact (vec3fcu &P1, vec3fcu &P2, 
 }
 
 
-vec2f* checkSelfCDGPU(gpu_mesh* cloth) ;
-vec2f* checkCDGPU(gpu_mesh* cloth,gpu_mesh* lion) ;
+vec2f* checkSelfCDGPU(set<int>& clothset,gpu_mesh* cloth) ;
+vec2f* checkCDGPU(set<int>& clothset, set<int>& clionset,gpu_mesh* cloth,gpu_mesh* lion) ;
 
-vec2f* checkSelfCDGPU_no_cpu_memory(gpu_mesh* cloth) ;
-vec2f* checkCDGPU_no_cpu_memory(gpu_mesh* cloth,gpu_mesh* lion) ;
+vec2f* checkSelfCDGPU_no_cpu_memory(set<int>& clothset,gpu_mesh* cloth) ;
+vec2f* checkCDGPU_no_cpu_memory(set<int>& clothset,set<int>& clionset,gpu_mesh* cloth,gpu_mesh* lion) ;
 
 
-vec2f* checkSelfCDGPU_bvh(gpu_mesh* cloth) ;
-
+vec2f* checkSelfCDGPU_bvh(set<int>& clothset, gpu_mesh* cloth) ;
+vec2f* checkCDGPU_bvh(set<int>& clothset,set<int>& clionset,gpu_mesh* cloth,gpu_mesh* lion) ;
 
 
 

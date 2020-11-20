@@ -126,6 +126,7 @@ void setting_Data_self_CD_no_cpu_memo(gpu_mesh* cloth,dim3 block,dim3 thread)
 
 
     gpuErrchk( cudaGetLastError() );
+    START_GPU
     gpu_self_check_using_trifs<<<block,thread>>>(vertexs,
                                     trisid,
                                     result,
@@ -134,18 +135,17 @@ void setting_Data_self_CD_no_cpu_memo(gpu_mesh* cloth,dim3 block,dim3 thread)
                                     cloth->getsize() ,
                                     cloth->getsize()
     ) ;
-
+    END_GPU
 
     gpuErrchk( cudaGetLastError() );
     cloth->unget_vtxsdata() ;
     cloth->unget_dataid() ;
 }
 
-void getting_Data_self_CD_no_cpu_memory(gpu_mesh* cloth)
+void getting_Data_self_CD_no_cpu_memory(set<int>& collusionset,gpu_mesh* cloth)
 {
     vec2f* result = cloth->get_cpu_result() ;
     int* resultsize = cloth->get_cpu_size() ;
-    set<int> collusionset ;
 
     for(int i = 0 ; i < cloth->getsize()*32;i+=32)
     {
@@ -164,11 +164,11 @@ void getting_Data_self_CD_no_cpu_memory(gpu_mesh* cloth)
 
 
 
-vec2f* checkSelfCDGPU_no_cpu_memory(gpu_mesh* cloth)
+vec2f* checkSelfCDGPU_no_cpu_memory(set<int>& clothset,gpu_mesh* cloth)
 {
     START_GPU
     setting_Data_self_CD_no_cpu_memo(cloth,dim3(1000,1000,1),dim3(32,1,1)) ;
-    getting_Data_self_CD_no_cpu_memory(cloth) ;
+    getting_Data_self_CD_no_cpu_memory(clothset,cloth) ;
     END_GPU
     return nullptr ;
 }
@@ -212,7 +212,7 @@ __global__ void  gpu_check_using_trifs(     vec3fcu* left_vtxs,
         vec3fcu leftdata3 = left_vtxs[ left_dataid[leftcur].z ] ;
 
 
-        for( int i = rightstart ; i < all_right_size  ; i += threadsize )
+        for( int i = rightstart+threadid ; i < all_right_size  ; i += threadsize )
         {
 
             vec3fcu next1 = right_vtxs[ right_dataid[i].x ] ;
@@ -292,13 +292,10 @@ void setting_Data_CD_no_cpu_memo(gpu_mesh* cloth,gpu_mesh* lion,dim3 block,dim3 
 }
 
 
-void getting_Data_CD_no_cpu_memory(gpu_mesh* cloth,gpu_mesh* lion)
+void getting_Data_CD_no_cpu_memory(set<int>& collusion_cloth,set<int>& collusion_lion,gpu_mesh* cloth,gpu_mesh* lion)
 {
     vec2f* result = cloth->get_cpu_result() ;
     int* resultsize = cloth->get_cpu_size() ;
-    set<int> collusion_cloth ;
-    set<int> collusion_lion ;
-
 
     for(int i = 0 ; i < cloth->getsize()*32;i+=32)
     {
@@ -319,11 +316,11 @@ void getting_Data_CD_no_cpu_memory(gpu_mesh* cloth,gpu_mesh* lion)
 
 
 
-vec2f* checkCDGPU_no_cpu_memory(gpu_mesh* cloth,gpu_mesh* lion)
+vec2f* checkCDGPU_no_cpu_memory(set<int>& clothset,set<int>& clionset,gpu_mesh* cloth,gpu_mesh* lion)
 {
     START_GPU
     setting_Data_CD_no_cpu_memo(cloth,lion,dim3(1000,1000,1),dim3(32,1,1)) ;
-    getting_Data_CD_no_cpu_memory(cloth,lion) ;
+    getting_Data_CD_no_cpu_memory(clothset,clionset,cloth,lion) ;
     END_GPU
     return nullptr ;
 }

@@ -31,6 +31,13 @@
 #endif
 
 #include <GL/glh_glut.h>
+#include "cxxopts.hpp"
+
+#define _MORE_CPU_MEMORY_ 0
+#define _MORE_GPU_MEMORY_ 1
+#define _Using_BVH_GPU_ 2
+#define _Using_BVH_CPU_ 3
+
 
 bool b[256];
 int win_w = 512, win_h = 512;
@@ -41,7 +48,7 @@ void CaptureScreen(int, int);
 
 float DISP_SCALE = 0.001f;
 char *dataPath;
-int stFrame = 0;
+int stFrame = 108;
 
 // for sprintf
 #pragma warning(disable: 4996)
@@ -55,8 +62,8 @@ extern void dumpModel();
 extern void loadModel();
 extern void checkCD(bool);
 extern void checkSelfCD(bool);
-extern void gpu_checkSelfCD(bool) ;
-
+extern void gpu_checkSelfCD(int,bool) ;
+extern void gpu_checkCD(int,bool) ;
 
 static int level = 1;
 
@@ -277,20 +284,28 @@ void key2()
 {
 //	printf("Checking CD between model and cloth ...\n");
 //	checkCD(false);
-    printf("Checking Self-CD between cloths ...\n");
-    checkSelfCD(false);
-    gpu_checkSelfCD(false) ;
-
+	gpu_checkCD(0,false) ;
+//    printf("Checking Self-CD between cloths ...\n");
+//    checkSelfCD(false);
 
 }
 
+
+//
+//#define _MORE_CPU_MEMORY_ 0
+//#define _MORE_GPU_MEMORY_ 1
+//#define _Using_BVH_GPU_ 3
+//#define _Using_BVH_CPU_ 2
 void key3()
 {
 	printf("Checking CCD between model and cloth ...\n");
 //	checkCD(true);
 	printf("Checking Self-CCD between cloths ...\n");
-    gpu_checkSelfCD(false) ;
+
+	// 0 i
+    gpu_checkSelfCD(2,false) ;
 	checkSelfCD(false);
+
 
 }
 
@@ -458,6 +473,8 @@ int main(int argc, char **argv)
 		printf("usage: %s data_path [start_frame] \n", argv[0]);
 
     dataPath = "C:\\Users\\lidan\\Desktop\\cudazuoye\\flag-no-cd\\";
+//    dataPath = "C:\\Users\\lidan\\Desktop\\cudazuoye\\kneel-lowres\\" ;
+
 
 	if (argc == 3) {
 		sscanf(argv[2], "%d", &stFrame);
