@@ -1,4 +1,4 @@
-# gpu report
+# gpu report for fast collision detection
 
 ## 1 Environment description
 
